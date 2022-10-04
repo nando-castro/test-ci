@@ -7,6 +7,10 @@ const app = express();
 app.use(json());
 app.use(cors());
 
+app.get('/xablau', async (req, res) => {
+  res.status(200).send('Opa funcionei de boas sera ?????');
+});
+
 app.get('/memes', async (req, res) => {
   const result = await prisma.memes.findMany();
   res.status(200).send(result);
