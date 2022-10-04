@@ -9,7 +9,7 @@ beforeEach(async () => {
 
 const meme = {
   url: 'http://www.memesbr.com.br/xablau',
-  title: 'Xablau rindo sem parar',
+  title: `xablau rindo sem parar.${Date.now()}`,
   description: 'Xablau viu qualquer coisa aleatória e riu',
   author: 'Frank Rocha'
 };
