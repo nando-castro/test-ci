@@ -15,4 +15,4 @@ jobs:
           envkey_POSTGRES_URL: 'DATABASE_URL=postgres://pgroot:secret@db_ci:5432/memepedia_test'
           file_name: '.env.test'
       - name: Run tests
-        run: docker-compose -f docker-compose-test-yml run node_app_ci npm run test
+        run: docker-compose -f docker-compose-test.yml run node_app_ci npm run test
