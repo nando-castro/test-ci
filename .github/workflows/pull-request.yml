@@ -10,7 +10,7 @@ jobs:
         uses: SpicyPizza/create-envfile@v1
         with:
           envkey_POSTGRES_USER: "postgres"
-          envkey_POSTGRES_PASSWORD: "764082"
+          envkey_POSTGRES_PASSWORD: "postgres"
           envkey_POSTGRES_DB: "memepedia_test"
           envkey_DATABASE_URL: "postgres://postgres:postgres@db_ci:5432/memepedia_test"
           file_name: ".env.test"
